@@ -18,7 +18,7 @@ const List: React.FC<IProps> = ({ people }) => {
                 <li className={styleClass.List}>
                     <div className= {styleClass.Listheader}>
                         <img className={styleClass.Listimg} src={person.img}/>
-                        <h2>{person.name}</h2>
+                        <h2 className= {styleClass.Listheader1}>{person.name}</h2>
                     </div>
                     <p>{person.age} years old</p>
                     <p className={styleClass.Listnote}>{person.note}</p>

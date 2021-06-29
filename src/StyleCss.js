@@ -36,8 +36,9 @@ export const styleCss = createUseStyles({
       Listheader : {
         display: 'flex',
         alignItems: 'center',
+       //  flexDirection :'row-reverse'
       },
-      Listheader : {
+      Listheader1 : {
         color: 'rgb(37, 36, 36)',
       },
       Listimg : {
