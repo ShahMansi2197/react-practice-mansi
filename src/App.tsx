@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import List from './Component/List';
 import AddToList from './Component/AddToList';
+
 
 export interface IState {
   people: {

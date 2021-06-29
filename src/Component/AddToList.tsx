@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { IState as Props } from "../App";
 
+import  { styleCss } from '../StyleCss';
+
 interface IProps {
     setPeople: React.Dispatch<React.SetStateAction<Props["people"]>>
     people: Props["people"]
@@ -43,12 +45,14 @@ const AddToList: React.FC<IProps> = ({setPeople, people}) => {
         })
     }
 
+    const styleClass =  styleCss();
+
     return (
-        <div className="AddToList">
+        <div className={styleClass.AddToList}>
             <input 
                 type="text"
                 onChange={handleChange}
-                className="AddToList-input"
+                className={styleClass.AddToListinput}
                 name="name"
                 value={input.name}
                 placeholder="Name"
@@ -56,7 +60,7 @@ const AddToList: React.FC<IProps> = ({setPeople, people}) => {
             <input 
                 type="text"
                 onChange={handleChange}
-                className="AddToList-input"
+                className={styleClass.AddToListinput}
                 name="age"
                 value={input.age}
                 placeholder="Age"
@@ -64,21 +68,21 @@ const AddToList: React.FC<IProps> = ({setPeople, people}) => {
             <input 
                 type="text"
                 onChange={handleChange}
-                className="AddToList-input"
+                className={styleClass.AddToListinput}
                 name="img"
                 value={input.img}
                 placeholder="Image Url"
             />
             <textarea
                 onChange={handleChange}
-                className="AddToList-input"
+                className={styleClass.AddToListinput}
                 name="note"
                 value={input.note}
                 placeholder="Note"
             />
             <button
                 onClick={handleClick}
-                className="AddToList-btn"
+                className={styleClass.AddToListbtn}
             >
                 Add to List
             </button>
