@@ -25,7 +25,7 @@ function App() {
     <div className="App">
      
       <AddToList setPeople={setPeople} people={people}/>
-      <h1 className={styleClass.Listheader} >People Invited to my Party</h1>
+      <h1 style={{textAlign:'center'}}>People Invited to my Party</h1>
       <List people={people}/>
     </div>
   );
