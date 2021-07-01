@@ -42,7 +42,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.29.0",
-    "webpack": "^5.41.1"
+    "eslint": "^7.29.0"
   }
 }
